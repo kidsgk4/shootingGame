@@ -17,7 +17,8 @@
 
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTYw/MDAxNTU3NzE1NDk4NzMw.6UMJlKi1LKUJmyiWYLIXgFQC3T9rayHy-FVUktKbY9sg.fCmSfoRCUj9hY4YAD0uchUH0si7j865L9op0cofIvE0g.PNG.kidsgk4/image.png?type=w580"/>
 
-<https://postfiles.pstatic.net/MjAxOTA1MTNfNjAg/MDAxNTU3NzE4Nzg1MjE4.VZCwfqN_Gic8UM5fT1b71vahHbnUbTZ91lcrpzzBxdsg.vZ3letNdB--JjFF8OllRhD__v86IsaV-E-ZMlI4JR5Ug.PNG.kidsgk4/image.png?type=w580"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfNjAg/MDAxNTU3NzE4Nzg1MjE4.VZCwfqN_Gic8UM5fT1b71vahHbnUbTZ91lcrpzzBxdsg.vZ3letNdB--JjFF8OllRhD__v86IsaV-E-ZMlI4JR5Ug.PNG.kidsgk4/image.png?type=w580"/>
+
 
 적군 배열 모두 삭제 시 보스 등장 
 -보스에게 히어로의 총알 20회 충돌 시 보스 
