@@ -10,7 +10,7 @@
 -모든 게임 오프젝트의 등장, 소멸을 처리해주는 ObjectManager 클래스 정의 
 
 <br>
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMzMg/MDAxNTU3NzE1MTQzODEx.ON8r9DyxKTPsW9M7duA6IcTT-MWd8Q3dRM5coOFdpV8g.XBmQsSf11T49TaxURtp2849E2QwLmytzrfOU3aR4YE8g.PNG.kidsgk4/image.png?type=w580"/>
+
 -모든 게임 오프젝트의 등장, 소멸을 처리해주는 ObjectManager 클래스 정의
 <p>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfNzEg/MDAxNTU3NzY1MzMyMjE2.L199Gcer7zx5OGsWw9H4pTAEGmuR-Yc2kgIhQ4WL2FIg.2gK-_LrFR4IVIF07tKxdip000D6XHQUChyO_eUJdr70g.PNG.kidsgk4/image.png?type=w580"/>
