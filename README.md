@@ -27,8 +27,10 @@
 <br>
 -1.아이템 일정 개수 획득시 이미지 전환<br>
 -2.아이템 획득 시 카운터 증가
+<p>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjY1/MDAxNTU3NzY2MTMxNzcz.KqyFom-EFiZOOV-8e00XhFxRU-iAv6WPOw7eIMzE5bEg.e2NuptEovUvfUmBpJeo6egdd1GUghZ8hJXiXB938SIgg.PNG.kidsgk4/image.png?type=w580"/>
+</p>
 <br>
 -1.아이템 일정 개수 추가 획득시 마지막 이미지 전환
 <br>
