@@ -6,8 +6,6 @@
 - setTimeout() 을 이용한 GameLoop 구현 
 <br>
 - 모든 게임 객체들의 최상위 클래스인 GameObject 를 정의하여 tick(), render() 메서드를 재정의하도록 객체 설계 
-<br>
--모든 게임 오프젝트의 등장, 소멸을 처리해주는 ObjectManager 클래스 정의 
 
 <br>
 
