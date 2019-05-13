@@ -1,6 +1,17 @@
 # shootingGame
+
+
+-주요 적용기술
+<br>
+- setTimeout() 을 이용한 GameLoop 구현 
+<br>
+- 모든 게임 객체들의 최상위 클래스인 GameObject 를 정의하여 tick(), render() 메서드를 재정의하도록 객체 설계 
+<br>
+-모든 게임 오프젝트의 등장, 소멸을 처리해주는 ObjectManager 클래스 정의 
+
+<br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMzMg/MDAxNTU3NzE1MTQzODEx.ON8r9DyxKTPsW9M7duA6IcTT-MWd8Q3dRM5coOFdpV8g.XBmQsSf11T49TaxURtp2849E2QwLmytzrfOU3aR4YE8g.PNG.kidsgk4/image.png?type=w580"/>
--오브젝트 매니저 이용한 객체구현 슈팅게임 프로젝트
+-모든 게임 오프젝트의 등장, 소멸을 처리해주는 ObjectManager 클래스 정의
 
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTg5/MDAxNTU3NzE1MTYzNzEw.f4yc6WnXZqxMfjTxVo4SkERP5MWrkGj1c528g8N7Oywg.DQQgWA0DAOA7AWgNuAEhPumCCBPb5TRfxkEfl5_a0OQg.PNG.kidsgk4/image.png?type=w580"/>
 -방향키 조작 제어 게임
