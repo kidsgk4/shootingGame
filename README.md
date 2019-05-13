@@ -23,7 +23,7 @@
 <br>
 -아이템 객체 획득 시 조건 활용 히어로 이미지 변신 ( 3단계 중 마지막 단계 도달 시 히어로와 적군의 충돌검사 무시 조건 발동 충돌 시 적군객체만 삭제)
 
-https://postfiles.pstatic.net/MjAxOTA1MTRfMjE1/MDAxNTU3NzY1ODQ2Njgw.WXfIT4BUtITlCzBBmtDCYNMJ4SdmdAbpGSb6iCpEs1gg.UCy7Sij91znv7xCIWoVZ-XTZh4uiMEAI7RPDHk2m_3gg.PNG.kidsgk4/image.png?type=w580
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjE1/MDAxNTU3NzY1ODQ2Njgw.WXfIT4BUtITlCzBBmtDCYNMJ4SdmdAbpGSb6iCpEs1gg.UCy7Sij91znv7xCIWoVZ-XTZh4uiMEAI7RPDHk2m_3gg.PNG.kidsgk4/image.png?type=w580"/>
 <br>
 -1.아이템 일정 개수 획득시 이미지 전환
 -2.아이템 획득 시 카운터 증가
