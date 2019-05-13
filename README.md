@@ -13,12 +13,15 @@
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMzMg/MDAxNTU3NzE1MTQzODEx.ON8r9DyxKTPsW9M7duA6IcTT-MWd8Q3dRM5coOFdpV8g.XBmQsSf11T49TaxURtp2849E2QwLmytzrfOU3aR4YE8g.PNG.kidsgk4/image.png?type=w580"/>
 -모든 게임 오프젝트의 등장, 소멸을 처리해주는 ObjectManager 클래스 정의
 
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTg5/MDAxNTU3NzE1MTYzNzEw.f4yc6WnXZqxMfjTxVo4SkERP5MWrkGj1c528g8N7Oywg.DQQgWA0DAOA7AWgNuAEhPumCCBPb5TRfxkEfl5_a0OQg.PNG.kidsgk4/image.png?type=w580"/>
--방향키 조작 제어 게임
--오브젝트 매니저 총알 객체 구현한 슈팅게임
--적군과 히어로의 총알 충돌검사  - 충돌 시 배열에 담은 적군 객체 삭제
--아이템 객체 획득 시 조건 활용 히어로 이미지 변신 ( 3단계 중 마지막 단계 도달 시 히어로와 적군의 충돌검사 무시 적군객체만 삭제 전 단계까지는 충돌 시
-게임 over)
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfNzEg/MDAxNTU3NzY1MzMyMjE2.L199Gcer7zx5OGsWw9H4pTAEGmuR-Yc2kgIhQ4WL2FIg.2gK-_LrFR4IVIF07tKxdip000D6XHQUChyO_eUJdr70g.PNG.kidsgk4/image.png?type=w580"/>
+<br>
+-1.등장된 총알 객체 와 적군 객체 충돌 시 ObjectManager 에 의해 소멸 처리 , 일정 범위 이상 벗어날 경우 적군,아이템,총알 모두 소멸 처리
+<br>
+-2.방향키로 조작 되는 캐릭터와 적군,아이템 충돌검사 처리 
+<br>
+-3.아이템과 캐릭터 충돌시 아이템만 소멸.
+<br>
+-아이템 객체 획득 시 조건 활용 히어로 이미지 변신 ( 3단계 중 마지막 단계 도달 시 히어로와 적군의 충돌검사 무시 조건 발동 충돌 시 적군객체만 삭제)
 
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTM4/MDAxNTU3NzE1MjgxNDY2.Uph0ErvD1zrAyqtqdu8gBmniFjhKvk9NFtpC_knVuo8g.dpozsRLu8qcu3vWxGv5m_3ivaVFQMWxRQYwYNIHJ5Jsg.PNG.kidsgk4/image.png?type=w580"/>
 
