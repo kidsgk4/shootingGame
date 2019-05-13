@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>프로젝 트</title>
+<style>
+*{margin:0px}
+
+#stage{
+	width:1600px;
+	height:880px;
+	background:url("../res/project.jpg");
+	background-size:cover;
+	position:relative;
+	overflow:hidden;
+	float:left;
+}
+#infoArea{
+	width:287px;
+	height:200px;
+	background:url("../res/don.png");
+	background-size:cover;
+	font-size:40px;
+	float:right;
+}
+#moneyInfo{
+	width:287px;
+	height:200px;
+	float:left;
+}
+/**/
+#box:before{
+	content:'';
+	display:block;
+	width:66%;
+	height:70%;
+	background-color:rgba(0,0,0,0.1);
+}
+/**/
+#box{
+	width:1000px;
+	height:500px;
+	position:absolute;
+	background-image:url("../res/gov.png");
+	background-repeat:no-repeat;
+	margin:auto;
+	float:left;
+	left:700px;
+	top:300px;
+	display:none;
+}
+</style>
+<script src="./GameObject.js"></script>
+<script src = "./ObjectManager.js"></script>
+<script src="./Hero.js"></script>
+<script src="./Money.js"></script>
+<script src="./Enemy.js"></script>
+<script src="./Bullet.js"></script>
+<script src="./Boss.js"></script>
+<script src="../lib/common.js"></script>
+<script>
+var stage;
+var bullet;
+var infoArea;
+var bgX=0;
+var score=0;
+var hero;
+var boss;
+var objectManager;
+var enemy;
+var moneyArray=[];
+var x1=[];
+var x2=[];
+var randomCount = 0;
+var key2=0;
+var re ="../res/injik1.png"
+var a=200;
+var b=200;
+var stt=0;
+var st;
+//var box;
+function init(){
+	stage=document.getElementById("stage");
+	infoArea=document.getElementById("infoArea");
+	objectManager = new ObjectManager();
+	createHero();
+	createMoney();
+	createEnemy();
+	//box();
+	gameLoop();
+	//addEventListener("mouseClick", function(){
+		//console.log(event.clientX, event.clientY);
+	//});
+
+}
+function bgEffect(){
+    bgX--;
+	stage.style.backgroundPosition=bgX+"px 0px";
+}
+function createHero(){
+	hero=new Hero("HERO",stage,50,480,a,b,0,0,0,0,"",re);
+	objectManager.addObject(hero);
+}
+function createMoney(){
+    for(var i=0;i<20;i++){
+		var x=getRandomByRange(10,70)*10;
+		x1.push(x);
+		//console.log("x1:"+x);
+        money = new Money("MONEY",stage,1600+i*500,x,80,80,-1,0,0,0,"","../res/money.png");
+		objectManager.addObject(money);
+        moneyArray.push(money);
+    }
+}
+function createEnemy(){
+	for(var i=0;i<20;i++){
+		var x=getRandomByRange(30,70)*10;
+		//console.log("x:"+x);
+		if(x1[i]==x2[i]){
+			i--;
+			
+		}else{
+			x2.push(x);
+		}
+	enemy=new Enemy("ENEMY",stage,1600+i*500,x,130,100,-1,0,0,0,"","../res/mapia1.png");
+	objectManager.addObject(enemy);
+	}
+}
+function createBoss(){
+	//alert("나 보스");
+	boss=new Boss("BOSS",stage,screen.width,500,300,300,-0.5,0,0,0,"","../res/baron.gif");
+	objectManager.addObject(boss);
+}
+function showScore(){
+	infoArea.innerText=score;
+}   
+//function box(){
+	//box=new Box(stage,50,490,20,20,0,0,0,0,"dodgerblue","");
+//}
+function control(){
+	var key=event.keyCode;
+	
+	if(key==32){
+    bullet = new Bullet("BULLET",stage,hero.x+hero.width,hero.y+60,45,40,8,0,0,0,"","../res/missile.png");
+	objectManager.addObject(bullet);
+	}
+	switch(key){
+		case 37:hero.velX=-5;break;
+		case 39:hero.velX=5;break;
+		case 38:hero.velY=-5;break;
+		case 40:hero.velY=5;break;
+
+		}
+	
+}
+function gameover(){
+	box.style.display = "block";
+	stage.style.display="none";
+	infoArea.style.display="none";
+	clearTimeout(st);
+}
+function gameLoop(){
+	objectManager.tick();
+    objectManager.render();
+	bgEffect();
+	st = setTimeout("gameLoop()",1);
+}
+function stop(){
+	hero.velX=0;
+	hero.velY=0;
+}
+addEventListener("load",function(){
+	init();
+});
+</script>
+</head>
+<body onKeyDown="control()" onKeyUp="stop()">
+	<div id="wrapper">
+		<div id="box"></div>
+		<div id="stage"></div>
+		
+			<div id="infoArea"></div>
+			<div id="moneyInfo"></div>
+	</div>
+</body>
+</html>
